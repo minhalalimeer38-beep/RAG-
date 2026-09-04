@@ -1,0 +1,9 @@
+streamlit
+pypdf
+chromadb
+langchain-core
+langchain-text-splitters
+langchain-chroma
+langchain-huggingface
+langchain-google-genai
+sentence-transformers
