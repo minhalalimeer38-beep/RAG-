@@ -31,7 +31,7 @@ except Exception:
 @st.cache_resource
 def load_embeddings():
     return HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+        model_name="intfloat/multilingual-e5-small"
     )
 
 
@@ -76,7 +76,7 @@ def build_vectorstore(documents):
 
 def answer_question(vectorstore, question):
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         google_api_key=api_key,
         temperature=0,
     )
